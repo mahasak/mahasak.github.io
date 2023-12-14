@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://mahasak.github.io/", // replace this with your deployed domain
   author: "Max Pijittum",
-  desc: "Max Personal blog.",
+  desc: "A journey through endless learning",
   title: "mahasak.com",
   ogImage: "mahasak-text-og.jpg",
   lightAndDarkMode: true,
