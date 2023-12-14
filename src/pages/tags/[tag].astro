@@ -10,6 +10,7 @@ import getPostsByTag from "@utils/getPostsByTag";
 import slugify from "@utils/slugify";
 import { SITE } from "@config";
 import getSortedPosts from "@utils/getSortedPosts";
+import getPostsWithRT from "@utils/getPostsWithRT";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -18,8 +19,9 @@ export interface Props {
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
+  const postsWithRT = await getPostsWithRT(posts);
 
-  const tags = getUniqueTags(posts);
+  const tags = getUniqueTags(postsWithRT);
 
   return tags.map(tag => {
     return {
@@ -35,7 +37,7 @@ const posts = await getCollection("blog", ({ data }) => !data.draft);
 
 const tagPosts = getPostsByTag(posts, tag);
 
-const sortTagsPost = getSortedPosts(tagPosts);
+const sortTagsPost = await getSortedPosts(tagPosts);
 ---
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>
