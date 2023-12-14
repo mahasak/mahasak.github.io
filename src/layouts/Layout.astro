@@ -2,7 +2,7 @@
 import { SITE } from "@config";
 import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
-import { Umami } from 'astro-analytics';
+import Umami from '../components/Umami.astro';
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export interface Props {
@@ -84,6 +84,6 @@ const socialImageURL = new URL(
   </head>
   <body>
     <slot />
-    <Umami dataId="09f4c462-0247-48e4-bd68-ba2adf5c0403" src="https://us.umami.is/script.js" />
+    <Umami dataId="09f4c462-0247-48e4-bd68-ba2adf5c0403" />
   </body>
 </html>

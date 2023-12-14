@@ -1,0 +1,9 @@
+---
+export interface Props {
+  dataId: string;
+}
+
+const { dataId} = Astro.props;
+---
+
+<script async src="https://us.umami.is/script.js" data-website-id={dataId}></script>
