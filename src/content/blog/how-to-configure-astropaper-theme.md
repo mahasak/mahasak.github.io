@@ -28,7 +28,7 @@ export const SITE = {
   author: "Sat Naing",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "mahasak-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
