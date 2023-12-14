@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Max Pijittum",
   desc: "Max Personal blog.",
   title: "mahasak.com",
-  ogImage: "mahasak-og.jpg",
+  ogImage: "mahasak-text-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
 };

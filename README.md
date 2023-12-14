@@ -48,7 +48,7 @@ Inside of AstroPaper, you'll see the following folders and files:
 │   │   └── logo.svg
 │   │   └── logo.png
 │   └── favicon.svg
-│   └── mahasak-og.jpg
+│   └── mahasak-text-og.jpg
 │   └── robots.txt
 │   └── toggle-theme.js
 ├── src/
