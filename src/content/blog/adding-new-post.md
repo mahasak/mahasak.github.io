@@ -8,7 +8,7 @@ draft: false
 tags:
   - docs
 description:
-  Placeholder
+  This is a placeholder
 ---
 
 Placeholder
