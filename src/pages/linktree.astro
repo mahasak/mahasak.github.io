@@ -1,8 +1,6 @@
 ---
 import MainLayout from "@layouts/LinkTree.astro";
 import LinkTreeAvatar from "@components/LinkTreeAvatar.astro";
-import LinkTreeFeaturedCardLayout from "@layouts/LinkTreeFeaturedCardLayout.astro";
-import LinkTreeFeaturedCard from "@components/LinkTreeFeaturedCard.astro";
 import LinkTreeLinksLayout from "@layouts/LinkTreeLinksLayout.astro";
 import LinkTreeLink from "@components/LinkTreeLink.astro";
 import LinkTreeSocial from "@components/LinkTreeSocial.astro";
@@ -10,20 +8,6 @@ import LinkTreeSocial from "@components/LinkTreeSocial.astro";
 
 <MainLayout title="Astro LinkTree Clone">
   <LinkTreeAvatar />
-  <!--
-  <LinkTreeFeaturedCardLayout>
-    <LinkTreeFeaturedCard
-      featuredCardIcon='logos:patreon'
-      featuredCardTitle='Support Us!'
-      featuredCardLink='https://www.patreon.com/stefanrows'
-    />
-    <LinkTreeFeaturedCard
-      featuredCardIcon='logos:discord-icon'
-      featuredCardTitle='Join the Community!'
-      featuredCardLink='https://www.discord.com'
-    />
-  </LinkTreeFeaturedCardLayout>
-   -->
   <LinkTreeLinksLayout>
     <LinkTreeLink
       linkTitle="🧸 My Personal Blog"

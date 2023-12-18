@@ -1,36 +1,59 @@
 ---
-import { Icon } from "astro-icon"
+import twitter from "icons/twitter.svg?raw"; 
+import github from "icons/github.svg?raw"; 
+import instagram from "icons/instagram.svg?raw"; 
+import facebook from "icons/facebook.svg?raw"; 
+import youtube from "icons/youtube.svg?raw"; 
+import linkedin from "icons/linkedin.svg?raw"; 
 ---
 
 <div class='flex justify-between w-5/6 mt-20 text-teal-300'>
   <a
     class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
+    href='https://www.facebook.com/mahasak.pijittum'
+  >
+  <div class='w-8 md:w-12 xl:w-14'>
+    <Fragment set:html={facebook} />
+  </div>
+  </a>
+  <a
+    class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.twitter.com/@maxpijittum'
   >
-    <Icon class='w-8 md:w-12 xl:w-14' name='mdi:twitter' />
+  <div class='w-8 md:w-12 xl:w-14'>
+    <Fragment set:html={twitter} />
+  </div>
   </a>
   <a
     class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.github.com/mahasak'
   >
-    <Icon class='w-8 md:w-12 xl:w-14' name='mdi:github' />
+  <div class='w-8 md:w-12 xl:w-14'>
+    <Fragment set:html={github} />
+  </div>
   </a>
   <a
     class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.linkedin.com/in/mahasakpijittum'
   >
-    <Icon class='w-8 md:w-12 xl:w-14' name='mdi:linkedin' />
+  <div class='w-8 md:w-12 xl:w-14'>
+    <Fragment set:html={linkedin} />
+  </div>
   </a>
   <a
     class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.instagram.com/mahasak'
   >
-    <Icon class='w-8 md:w-12 xl:w-14' name='mdi:instagram' />
+  <div class='w-8 md:w-12 xl:w-14'>
+    <Fragment set:html={instagram} />
+  </div>
   </a>
   <a
     class='transition-all duration-500 hover:scale-105 opacity-70 hover:opacity-100'
     href='https://www.youtube.com/MahasakPijittum'
   >
-    <Icon class='w-8 md:w-12 xl:w-14' name='mdi:youtube' />
+  <div class='w-8 md:w-12 xl:w-14'>
+    <Fragment set:html={youtube} />
+  </div>
   </a>
 </div>
