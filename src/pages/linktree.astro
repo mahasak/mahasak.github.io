@@ -1,0 +1,43 @@
+---
+import MainLayout from "@layouts/LinkTree.astro"
+import Avatar from "@components/Avatar.astro"
+import FeaturedCardsLayout from "@layouts/FeaturedCardLayout.astro"
+import FeaturedCard from "@components/FeaturedCard.astro"
+import LinksLayout from "@layouts/LinksLayout.astro"
+import LinkTreeLink from "@components/LinkTreeLink.astro"
+import LinkTreeSocial from "@components/LinkTreeSocial.astro"
+---
+
+<MainLayout title='Astro LinkTree Clone'>
+  <Avatar />
+  <FeaturedCardsLayout>
+    <FeaturedCard
+      featuredCardIcon='logos:patreon'
+      featuredCardTitle='Support Us!'
+      featuredCardLink='https://www.patreon.com/stefanrows'
+    />
+    <FeaturedCard
+      featuredCardIcon='logos:discord-icon'
+      featuredCardTitle='Join the Community!'
+      featuredCardLink='https://www.discord.com'
+    />
+  </FeaturedCardsLayout>
+  <LinksLayout>
+    <LinkTreeLink
+      linkTitle='🧑‍🚀 Astro'
+      linkDescription='Astro Homepage'
+      linkUrl='https://www.astro.build'
+    />
+    <LinkTreeLink
+      linkTitle='🌍 My Portfolio'
+      linkDescription='Look at my portfolio!'
+      linkUrl='https://www.stefanrows.com'
+    />
+    <LinkTreeLink
+      linkTitle='🎥 YouTube'
+      linkDescription='Visit my YouTube channel!'
+      linkUrl='https://www.youtube.com/c/stefanrows'
+    />
+  </LinksLayout>
+  <LinkTreeSocial />
+</MainLayout>
