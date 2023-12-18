@@ -7,11 +7,22 @@ const { id } = Astro.props;
 
 const gtagUrl = `https://www.googletagmanager.com/gtag/js?id=${id}`;
 ---
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src={gtagUrl}></script>
-<script define:vars={{id}}>
+<script
+  data-category="analytics"
+  data-service="Google Analytics"
+  async
+  src={gtagUrl}></script>
+<script
+  data-category="analytics"
+  data-service="Google Analytics"
+  define:vars={{ id }}
+>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', id);
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", id);
 </script>

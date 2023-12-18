@@ -3,7 +3,12 @@ export interface Props {
   dataId: string;
 }
 
-const { dataId} = Astro.props;
+const { dataId } = Astro.props;
 ---
 
-<script async src="https://us.umami.is/script.js" data-website-id={dataId}></script>
+<script
+  data-category="analytics"
+  data-service="Umami"
+  async
+  src="https://us.umami.is/script.js"
+  data-website-id={dataId}></script>
