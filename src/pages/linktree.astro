@@ -1,28 +1,28 @@
 ---
 import MainLayout from "@layouts/LinkTree.astro"
-import Avatar from "@components/Avatar.astro"
-import FeaturedCardsLayout from "@layouts/FeaturedCardLayout.astro"
-import FeaturedCard from "@components/FeaturedCard.astro"
-import LinksLayout from "@layouts/LinksLayout.astro"
+import LinkTreeAvatar from "@components/LinkTreeAvatar.astro"
+import LinkTreeFeaturedCardLayout from "@layouts/LinkTreeFeaturedCardLayout.astro"
+import LinkTreeFeaturedCard from "@components/LinkTreeFeaturedCard.astro"
+import LinkTreeLinksLayout from "@layouts/LinkTreeLinksLayout.astro"
 import LinkTreeLink from "@components/LinkTreeLink.astro"
 import LinkTreeSocial from "@components/LinkTreeSocial.astro"
 ---
 
 <MainLayout title='Astro LinkTree Clone'>
-  <Avatar />
-  <FeaturedCardsLayout>
-    <FeaturedCard
+  <LinkTreeAvatar />
+  <LinkTreeFeaturedCardLayout>
+    <LinkTreeFeaturedCard
       featuredCardIcon='logos:patreon'
       featuredCardTitle='Support Us!'
       featuredCardLink='https://www.patreon.com/stefanrows'
     />
-    <FeaturedCard
+    <LinkTreeFeaturedCard
       featuredCardIcon='logos:discord-icon'
       featuredCardTitle='Join the Community!'
       featuredCardLink='https://www.discord.com'
     />
-  </FeaturedCardsLayout>
-  <LinksLayout>
+  </LinkTreeFeaturedCardLayout>
+  <LinkTreeLinksLayout>
     <LinkTreeLink
       linkTitle='🧑‍🚀 Astro'
       linkDescription='Astro Homepage'
@@ -38,6 +38,6 @@ import LinkTreeSocial from "@components/LinkTreeSocial.astro"
       linkDescription='Visit my YouTube channel!'
       linkUrl='https://www.youtube.com/c/stefanrows'
     />
-  </LinksLayout>
+  </LinkTreeLinksLayout>
   <LinkTreeSocial />
 </MainLayout>
