@@ -3,6 +3,8 @@ layout: ../layouts/PolicyLayout.astro
 title: "Policy"
 ---
 
+# Privacy Policy
+
 Last Update 17 May 2023
 
 The Company or BigBears.IO/Mahasak.com recognizes the importance of the protection of personal data for you of our products and services. We know you care how information about you is collected, used, disclosed, and transferred outside of Thailand. The information you share with us allows us to provide the products and services you need and want appropriately tailored for you, not only from us, but also those within our data ecosystem. We appreciate your trust that we will carefully and sensibly handle your personal data while giving you the very best personalized experience and customer services.
