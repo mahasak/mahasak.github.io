@@ -1,0 +1,16 @@
+---
+import SVG from './SVG.astro'
+const { bullet , listItems} = Astro.props
+// ...
+---
+
+<ul class='List'>
+  {
+    listItems.map((item: { innerHTML: any; }) => (
+      <li>
+        <SVG name={bullet} />
+        <Fragment set:html={item.innerHTML} />
+      </li>
+    ))
+  }
+</ul>
