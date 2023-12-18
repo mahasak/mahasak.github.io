@@ -1,15 +1,16 @@
 ---
-import MainLayout from "@layouts/LinkTree.astro"
-import LinkTreeAvatar from "@components/LinkTreeAvatar.astro"
-import LinkTreeFeaturedCardLayout from "@layouts/LinkTreeFeaturedCardLayout.astro"
-import LinkTreeFeaturedCard from "@components/LinkTreeFeaturedCard.astro"
-import LinkTreeLinksLayout from "@layouts/LinkTreeLinksLayout.astro"
-import LinkTreeLink from "@components/LinkTreeLink.astro"
-import LinkTreeSocial from "@components/LinkTreeSocial.astro"
+import MainLayout from "@layouts/LinkTree.astro";
+import LinkTreeAvatar from "@components/LinkTreeAvatar.astro";
+import LinkTreeFeaturedCardLayout from "@layouts/LinkTreeFeaturedCardLayout.astro";
+import LinkTreeFeaturedCard from "@components/LinkTreeFeaturedCard.astro";
+import LinkTreeLinksLayout from "@layouts/LinkTreeLinksLayout.astro";
+import LinkTreeLink from "@components/LinkTreeLink.astro";
+import LinkTreeSocial from "@components/LinkTreeSocial.astro";
 ---
 
-<MainLayout title='Astro LinkTree Clone'>
+<MainLayout title="Astro LinkTree Clone">
   <LinkTreeAvatar />
+  <!--
   <LinkTreeFeaturedCardLayout>
     <LinkTreeFeaturedCard
       featuredCardIcon='logos:patreon'
@@ -22,21 +23,17 @@ import LinkTreeSocial from "@components/LinkTreeSocial.astro"
       featuredCardLink='https://www.discord.com'
     />
   </LinkTreeFeaturedCardLayout>
+   -->
   <LinkTreeLinksLayout>
     <LinkTreeLink
-      linkTitle='🧑‍🚀 Astro'
-      linkDescription='Astro Homepage'
-      linkUrl='https://www.astro.build'
+      linkTitle="🧸 My Personal Blog"
+      linkDescription=": New content here !!"
+      linkUrl="https://mahasak.com"
     />
     <LinkTreeLink
-      linkTitle='🌍 My Portfolio'
-      linkDescription='Look at my portfolio!'
-      linkUrl='https://www.stefanrows.com'
-    />
-    <LinkTreeLink
-      linkTitle='🎥 YouTube'
-      linkDescription='Visit my YouTube channel!'
-      linkUrl='https://www.youtube.com/c/stefanrows'
+      linkTitle="🐻 My Personal Blog (Old)"
+      linkDescription=": No more updates"
+      linkUrl="https://bigbears.io"
     />
   </LinkTreeLinksLayout>
   <LinkTreeSocial />
