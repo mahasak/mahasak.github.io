@@ -50,7 +50,7 @@ export default defineConfig({
               "<br><br> Dear user, terms and conditions have changed since the last time you visited!",
           },
           settings_modal: {
-            title: "Cookies settings",
+            title: "mahasak.com Cookies settings",
             save_settings_btn: "Save current selection",
             accept_all_btn: "Accept all",
             reject_all_btn: "Reject all",
